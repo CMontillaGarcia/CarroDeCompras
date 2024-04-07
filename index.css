@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	/* 1 */
+	border-width: 0;
+	/* 2 */
+	border-style: solid;
+	/* 2 */
+	border-color: #e5e7eb;
+	/* 2 */
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 4rem;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+
+}
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(93, 43, 110);
+    height: 4rem;
+    z-index: 10;
+}
+
+#shop-icon{
+    width: 4rem;
+    height: 3rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+#shop-icon:hover{
+    background-color: rgb(105, 52, 120);
+    border-radius: 4rem;
+}
+
+#nav-content{
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    position: relative;
+}
+
+#nav-title{
+    color: white;
+    font-weight: 400;
+}
+
+.cart{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: #e4e4e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    transition: all 0.3s ease-in;
+}
+
+table{
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+
+td{
+    height: 6rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(171, 170, 170);
+}
+
+thead{
+    height: 2rem;
+    border-bottom: 1px solid rgb(171, 170, 170);
+}
+
+#table-clear{
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(214, 46, 105);
+    color: white;
+    font-weight: 700;
+    transition: all 0.3s ease-in;
+}
+
+#table-clear:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.show-cart{
+    height: 25rem;
+    padding: 1rem;
+}
+
+#search-icon{
+    width: 4rem;
+    height: 3rem;
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+
+#hero{
+    height: calc(100vh - 4rem);
+    background-image: url(imgs/hero-image.jpg);
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    padding: 0 1rem;
+}
+
+#hero-content{
+    height: 100%;
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+#hero-title{
+    font-size: 2rem;
+    align-items: center;
+}
+
+#hero-sub{
+    font-weight: 500;
+}
+
+#hero-input{
+    display: flex;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.44);
+}
+
+input{
+    width: 80%;
+    background-color: transparent;
+    padding: 0.5rem;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+input::placeholder{
+    color: white;
+}
+
+.info-icons{
+    width: 2rem;
+    height: 2rem;
+}
+
+#info{
+    padding: 1rem;
+    background-color: rgb(214, 46, 105);
+}
+
+#info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    color: white;
+    gap: 1rem;
+    margin: 0 auto;
+    
+}
+.info-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
+}
+
+.course-info-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#courses{
+    
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:0;
+    border-radius: 0.5rem;
+}
+
+#courses-container{
+    max-width: 80rem;
+    margin: 0 auto;
+    
+    width: 100%;
+}
+
+#course-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#courses-list{
+    margin: 0;
+    padding: 1rem ;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.courses-item{
+    background-color: #f4f4f5;
+    border-radius: 0.5rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.3s ease-in;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+}
+
+.course-item:hover{
+    transform: scale(1.05);
+}
+
+
+.course-img{
+    height: 40%;
+}
+
+.course-info{
+    height: 60%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.course-title, .course-price{
+    font-weight: 700;
+}
+
+.course-btn{
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background-color: rgb(105, 52, 120);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.course-btn:hover{
+    background-color: rgb(78, 37, 90);
+}
+
+
+@media (min-width: 640px){
+    .cart{
+        width: 50%;
+    }
+
+    #hero-content{
+        align-items: start;
+    }
+
+    #hero{
+        height: calc(50vh - 4rem);
+    }
+
+    #info-container{
+        flex-direction: row;
+    }
+    .info-div{
+        border: none;
+    }
+
+    .courses-item{
+        width: 40%;
+
+    }
+    #courses-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media (min-width: 1024px){
+   
+    .courses-item{
+        width: 30%;
+
+    }
+    #courses-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+    }
+}
